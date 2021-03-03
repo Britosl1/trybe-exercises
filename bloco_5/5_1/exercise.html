@@ -80,6 +80,16 @@
             caps.innerText = caps.innerText.toLocaleUpperCase();
         }
         console.log(textCapsLock());
+
+        function pContent (){
+            let par = document.getElementsByTagName('p');
+            for (let i = 0; i < par.length; i += 1){
+               console.log(par[i].innerHTML);
+            }
+    
+        }
+        pContent();
+
     </script>
   </body>
 </html>
