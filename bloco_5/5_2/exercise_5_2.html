@@ -101,7 +101,17 @@
 
         // Exercício 8
 
+        let list = document.createElement('ul');
+        document.querySelector('.right-content').appendChild(list);
+        let values = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+        for (let i = 0; i < values.length; i += 1){
+            let listLi = document.createElement('li');
+            listLi.innerHTML = values[i];
+            list.appendChild(listLi);
+        }
+
         
+
     </script>
   </body>
 </html>
