@@ -76,3 +76,28 @@ function turnRed (){
 }
 }
 turnRed();
+
+// Exercício 4
+
+function fridayButton (){
+let friday = document.querySelector('.buttons-container');
+let button = document.createElement('button'); 
+button.id = 'btn-friday';
+button.innerHTML = 'Sexta-feira'
+friday.appendChild(button);
+}
+
+fridayButton();
+
+// Exercício 5
+
+function fridayClick (){
+  let button = document.querySelector('#btn-friday');
+  let string = 'É SEXTA!!'
+  let fridays = document.querySelectorAll('.friday');
+  
+  button.addEventListener('Click', fridayClick()){
+    for ()
+  }
+  
+}
