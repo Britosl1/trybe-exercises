@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário do Exercício</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="" method="GET">
+        <fieldset>
+            <label for="enter-name">Nome:
+                <input type="text" name="name" id="enter-name" maxlength="40" required>
+            </label>
+            <br>
+            <br>
+            <label for="enter-mail">Email:
+                <input type="text" name="email" id="enter-mail" maxlength="50" required>
+            </label>
+            <br>
+            <br>
+            <label for="enter-address">Address:
+                <input type="text" name="address" id="enter-address" maxlength="200" required>
+            </label>
+            <br>
+            <br>
+            <label for="enter-state">Data de Início:
+                <select name="start-date" id="enter-date" required>
+            </label>
+            <br>
+            <br>
+            <div>
+                <label for="enter-home">
+                    <input type="radio" id="enter-home" name="home" value="house" required>Casa
+                    <input type="radio" id="enter-home" name="home" value="apartament" required>Apartamento
+                </label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <div>
+                <label for="enter-resume">
+                    <p>Faça um resumo de sua vida profissional:</p>
+                    <textarea name="resume" id="enter-resume" cols="30" rows="10" required maxlength="1000">Resumo do Currículo</textarea>
+                </label>
+            </div>
+            <br>
+            <div>
+                <label for="enter-position">Cargo:
+                    <input type="text" name="position" id="enter-position" maxlength="40" required>
+                </label>
+            </div>
+            <br>
+            <div>
+                <label for="enter-job-description">Descrição do Cargo:
+                    <input type="text" name="job-description" id="enter-job-description" maxlength="500" required>
+                </label>
+            </div>
+            <br>
+            <div>
+                <label for="">
+                    <input type="text" name="" id="">
+                </label>
+            </div>
+        </fieldset>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
