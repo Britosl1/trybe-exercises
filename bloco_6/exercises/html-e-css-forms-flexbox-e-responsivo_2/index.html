@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário do Exercício</title>
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta2-dist/css/bootstrap.min.css">
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="bootstrap-5.0.0-beta2-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="" method="GET">
+        <div>
+            <div for="enter-name" class="form-check">Nome:
+                <input type="text" class=".form-control-sm." name="name" id="enter-name" maxlength="40" required>
+            </div>
+            <br>
+            <br>
+            <div for="enter-mail" class="form-check">Email:
+                <input type="text" name="email" id="enter-mail" maxlength="50" required>
+            </div>
+            <br>
+            <br>
+            <div for="enter-address" class="form-check">Address:
+                <input type="text" name="address" id="enter-address" maxlength="200" required>
+            </div>
+            <br>
+            <br>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Casa
+                </label>
+              </div>
+              
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Apartamento
+                </label>
+              </div>
+        </div>
+        <div>
+            <div class="form-check">
+                <div for="enter-resume">
+                    <p>Faça um resumo de sua vida profissional:</p>
+                    <textarea name="resume" id="enter-resume" cols="30" rows="10" required maxlength="1000">Resumo do Currículo</textarea>
+                </div>
+            </div>
+            <br>
+            <div>
+                <div for="enter-position">Cargo:
+                    <input type="text" name="position" id="enter-position" maxlength="40" required>
+                </div>
+            </div>
+            <br>
+            <div>
+                <div for="enter-job-description">Descrição do Cargo:
+                    <input type="text" name="job-description" id="enter-job-description" maxlength="500" required>
+                </div>
+            </div>
+            <br>
+            <div>
+                <div for="">
+                    <input type="text" name="" id="">
+                </div>
+            </div>
+        </div>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
