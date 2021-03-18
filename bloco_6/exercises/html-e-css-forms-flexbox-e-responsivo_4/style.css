@@ -12,7 +12,6 @@
   .header-container {
     background-color: #5C687C;
     display: flex;
-
   }
   
   .logo-container {
@@ -24,6 +23,9 @@
   .menu-container {
     display: flex;
     flex-basis: 500px;
+    order: 1;
+    flex-grow: 1;
+    align-items: center;
   }
   
   .menu-container ul {
