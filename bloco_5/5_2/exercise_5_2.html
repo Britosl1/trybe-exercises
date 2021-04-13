@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      div {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+        //Exercício 1
+        let bodyElement = document.createElement('h1');
+        bodyElement.innerHTML =  'Exercício 5.2 - JavaScript DOM ';    
+        document.body.appendChild(bodyElement);
+
+        // Exercício 2
+
+        let classDiv = document.createElement('div');
+        classDiv.className = 'main-content';
+        document.body.appendChild(classDiv);
+
+        // Exercício 3
+
+        let classCenter = document.createElement('div');
+        classCenter.className = 'center-content';
+        document.querySelector('.main-content').appendChild(classCenter);
+
+        // Exercício 4
+
+        let addParagraph = document.createElement('p');
+        addParagraph.innerText = 'I got to keep movin, I got to keep movin Blues fallin down like hail, blues fallin down like hail Hmmm-mmm, blues fallin down like hail, blues fallin down like hail'
+        document.querySelector('.main-content').appendChild(addParagraph);
+
+        // Exercício 5
+
+        let classLeft = document.createElement('div');
+        classLeft.className = 'left-content';
+        document.querySelector('.main-content').appendChild(classLeft);
+
+        // Exercício 6
+
+        let classRight = document.createElement('div');
+        classRight.className = 'right-content';
+        document.querySelector('.main-content').appendChild(classRight);
+
+        // Exercício 7
+
+        let imageElement = document.createElement('img');
+        imageElement.src = 'https://picsum.photos/200'
+        imageElement.className = 'small-image';
+        document.querySelector('.left-content').appendChild(imageElement);
+
+        // Exercício 8
+
+        let list = document.createElement('ul');
+        document.querySelector('.right-content').appendChild(list);
+        let values = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+        for (let i = 0; i < values.length; i += 1){
+            let listLi = document.createElement('li');
+            listLi.innerHTML = values[i];
+            list.appendChild(listLi);
+        }
+        
+        // Exercício 9
+
+        let tagsH3 = document.createElement('div');
+        document.querySelector('.main-content').appendChild(tagsH3);
+        for (let i = )
+
+
+    </script>
+  </body>
+</html>
